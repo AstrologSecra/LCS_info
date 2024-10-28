@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c3e50; /* Темно-синий фон */
+    color: #ecf0f1; /* Светло-серый текст */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    background-color: #34495e; /* Темно-синий контейнер */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #3498db; /* Голубой заголовок */
+}
+
+.container a {
+    color: #2ecc71; /* Зелёный цвет ссылки */
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.container a:hover {
+    color: #1abc9c; /* Бирюзовый цвет при наведении */
+    text-decoration: underline;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.links h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #e74c3c; /* Красный цвет заголовка списка */
+}
+
+.links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links ul li {
+    margin: 10px 0;
+}
+
+.links ul li a {
+    color: #ecf0f1; /* Светло-серый цвет ссылок в списке */
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.links ul li a:hover {
+    color: #f39c12; /* Оранжевый цвет при наведении */
+    text-decoration: underline;
+}
+
+/* Медиа-запросы для адаптивного дизайна */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    .container h1 {
+        font-size: 1.2em;
+    }
+
+    .container a {
+        font-size: 1em;
+    }
+
+    .links h2 {
+        font-size: 1.1em;
+    }
+
+    .links ul li a {
+        font-size: 0.9em;
+    }
+}
